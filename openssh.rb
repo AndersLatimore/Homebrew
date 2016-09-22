@@ -36,8 +36,7 @@ class Openssh < Formula
   if OS.mac?
     # Both these patches are applied by Apple.
     patch do
-      #url "https://raw.githubusercontent.com/Homebrew/patches/1860b0a74/openssh/patch-sandbox-darwin.c-apple-sandbox-named-external.diff"
-      url "https://raw.githubusercontent.com/Homebrew/formula-patches/master/openssh/patch-sshd.c-apple-sandbox-named-external.diff"
+      url "https://raw.githubusercontent.com/Homebrew/patches/1860b0a74/openssh/patch-sandbox-darwin.c-apple-sandbox-named-external.diff"
       sha256 "d886b98f99fd27e3157b02b5b57f3fb49f43fd33806195970d4567f12be66e71"
     end
 
